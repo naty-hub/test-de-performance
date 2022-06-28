@@ -18,7 +18,6 @@ Groupe Rina-Myriam Harroch / Naty Ghanem
 
     L'objectif est de faire en sorte que les visiteurs achètent sur le site.
 
-Faire de
 
 - Type d'utilisateurs prévus :
     La cible est principalement les débutants ou les professionnels de la couture.

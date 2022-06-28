@@ -14,18 +14,16 @@ Groupe : Naty Ghanem, Rina-Myriam Harroch
 
 - Description globale du projet: 
 
-    Le site https://patience-et-petits-points.fr/ est une boutique en ligne ainsi qu'un blog sur la broderie.
+    Le site https://patience-et-petits-points.fr/ est un blog qui inclut une boutique en ligne. Sur le même site il y a un onglet boutique et blog.
 
 - Objectif de l'application : 
 
-    Le but est de vendre des modèles de broderie et des articles de mercerie. 
-    Un visiteur a la possibilité d'acheter et de laisser un commentaire sur les articles.
+    Le but est de vendre des patrons de broderie et des articles de mercerie comme des aiguilles ou du tissus. 
+    On peut aussi laisser un commentaire sur les articles du blog pour partager des astuces.
 
 - Type d'utilisateurs prévus :
     La cible est principalement les débutants dans la couture et les passionés.
-    Le site prends en compte des fonctionnalités différentes selon le statut de l'utilisateur : 
-    - Un visiteur non connecté 
-    - Un utilisateur connecté 
+    L'utilisateur peut faire des achats après s'être connecté ou seulement visiterle blog. 
 
 ## Architecture de l'application
 
