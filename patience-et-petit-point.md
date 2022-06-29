@@ -70,10 +70,15 @@ Aucune donné sur l'environnement de production. Aucune comparaison possible ave
 ## Planification des tests
 
 1. Les limitations sont iconnues, on prendra une valeur de 500 utilisateurs
-2. Comprendre/Prévoir le modèle de charge en production et l'adapter au modèle des tests.//TODO
+2. Le modele de charge en production n'est pas connu. Cela rend difficle de l'adapter au modele de test.
 3. Type de test nécessaire : load testing
 4. Les métriques que l'on souhaite tester sont les temps de reponse dû aux nombres de connexion et vérifier l'utilisation du CPU. 
-5. Les métriques qui définiront la réussite ou l'échec du test.//TODO
+5. Les métriques qui définiront la réussite ou l'échec du test :
+    - Processor Usage
+    - Memory use
+    - Memory pages/second
+    - CPU interrupts per second
+    - Hits per second
 
 
 ## 7. Etapes des tests
@@ -93,7 +98,6 @@ Aucune donné sur l'environnement de production. Aucune comparaison possible ave
 
 Le proscess necessite des données cloner de la prod.
 
-Indiquez comment se fait la préparation de la donnée.//TODO
 
 ## 8. Execution des tests
 
@@ -114,9 +118,6 @@ On va se baser sur un niveau de visite de 500 utilisateurs.
 | Cycle 2 - Run 3 | Load Test - 1 Minute test with 70% of 500 users |
 | Cycle 2 - Run 4 | Load Test - 1 Minute test with 50% of 500 users |
 | Cycle 2 - Run 5 | Load Test - 1 Minute test with 20% of 500 users |
-
-//TODO
-Ensuite, détaillez chaque scénario comme l'exemple suivant (pour le Load Test) :
 
 |  | Test Details |
 |--------------|:-----------:|

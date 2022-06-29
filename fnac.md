@@ -69,10 +69,15 @@ Aucune donné sur l'environnement de production. Aucune comparaison possible ave
 ## Planification des tests
 
 1. Les limitations sont iconnues.
-2. Comprendre/Prévoir le modèle de charge en production et l'adapter au modèle des tests.//TODO
+2. Le modele de charge en production n'est pas connu. Cela rend difficle de l'adapter au modele de test.
 3. Type de test nécessaire : stress testing
 4. Les métriques que l'on souhaite tester sont les temps de reponse dû à de grosse quantité de connexion pour déterminer à quel moment le site crash et vérifier l'utilisation du CPU. 
-5. Les métriques qui définiront la réussite ou l'échec du test.//TODO
+5. Les métriques qui définiront la réussite ou l'échec du test:
+    - Processor Usage
+    - Memoru use
+    - Memory pages/second
+    - CPU interrupts per second
+    - Response Time
 
 
 ## 7. Etapes des tests
@@ -91,7 +96,6 @@ Aucune donné sur l'environnement de production. Aucune comparaison possible ave
 
 Le proscess necessite des données cloner de la prod.
 
-Indiquez comment se fait la préparation de la donnée.//TODO
 
 ## 8. Execution des tests
 
@@ -107,19 +111,17 @@ On va se baser sur une echelle de 10 000 utilisateurs puisque c'est la connectio
 | Cycle 1 - Run 5 | Stress Test - 1 Minute test with 5000% of 10 000 users |
 | Cycle 1 - Run 6 | Stress Test - 1 Minute test with 10000% of 10 000 users |
 
-//TODO
-Ensuite, détaillez chaque scénario comme l'exemple suivant (pour le Load Test) :
 
 |  | Test Details |
 |--------------|:-----------:|
-| **Purpose** | Peak user transaction processing will be under examination to <br/> determine if the system can maintain response times <br/> under the highest anticipated load. <br/> This test is designed to collect performance <br/> metrics on transaction throughput, response times, <br/> and system resource utilization, <br/> in comparison to Performance requirements. |
-| **No. of Tests** | 4 (2 tests per cycle) |
-| **Duration** | Ramp-up: X - Steady State: X - Ramp-down: X |
-| **Scripts** | 1. XXXX - 2. XXXX |
-| **Scenario Name** | Load Test Scenario |
-| **User Load / Volume** | 500 Vusers (Threads) Load |
+| **Purpose** | Peak user transaction processing will be under examination to <br/> determine when the system cannot maintain response times <br/> under the highest load. <br/> This test is designed to collect performance <br/> metrics on transaction throughput, response times, <br/> and system resource utilization until the website crash, <br/> in comparison to Performance requirements. |
+| **No. of Tests** |  6 levels of number of visitors |
+| **Duration** | Ramp-up: 2 minutes - Ramp-down: 2 minutes |
+| **Scripts** | 1. load the highest number user |
+| **Scenario Name** | Stress Test Scenario |
+| **User Load / Volume** | 10 000 Vusers (Threads) Load |
 | **Entry Criteria** | 1. The code should be stable and functionally verified <br/> 2. Test Environment should be stable and ready to use <br/> 3. Test Data should be available <br/> 4. All the NFRs should be agreed with the project <br/> 5. Test scripts should be ready to use |
-| **Validation Criteria** | 1. The mean of the response time should be below 1.5 sec <br/> 2. The error rate should be below 5% |
+| **Validation Criteria** | 1. The mean of the response time should be over 1.5 sec <br/> 2. The error rate should be over 5% |
 
 ## Résultats des tests
 NaN

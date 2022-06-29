@@ -73,10 +73,16 @@ Aucune donné sur l'environnement de production. Aucune comparaison possible ave
 ## Planification des tests
 
 1. Les limitations sont iconnues.
-2. Comprendre/Prévoir le modèle de charge en production et l'adapter au modèle des tests.//TODO
+2. Le modele de charge en production n'est pas connu. Cela rend difficle de l'adapter au modele de test.
 3. Type de test nécessaire : spike testing
 4. Les métriques que l'on souhaite tester sont les temps de reponse dû à de grosse quantité de connexion pour déterminer si le site fonctionne bien et vérifier l'utilisation du CPU. 
-5. Les métriques qui définiront la réussite ou l'échec du test.//TODO
+5. Les métriques qui définiront la réussite ou l'échec du test: 
+    - Processor Usage
+    - Memoru use
+    - Memory pages/second
+    - CPU interrupts per second
+    - Response Time
+
 
 
 ## 7. Etapes des tests
@@ -95,7 +101,6 @@ Aucune donné sur l'environnement de production. Aucune comparaison possible ave
 
 Le proscess necessite des données cloner de la prod.
 
-Indiquez comment se fait la préparation de la donnée.//TODO
 
 ## 8. Execution des tests
 
@@ -110,8 +115,7 @@ Indiquez comment se fait la préparation de la donnée.//TODO
 | Cycle 2 - Run 2 | Repeat Load Test - 1 Hour test with peak load |
 | Cycle 2 - Run 3 | Stress Test - 1 Hour test with 150% of peak load |
 
-//TODO
-Ensuite, détaillez chaque scénario comme l'exemple suivant (pour le Load Test) :
+
 
 |  | Test Details |
 |--------------|:-----------:|
