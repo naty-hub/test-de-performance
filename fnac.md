@@ -60,15 +60,15 @@ Pour cela on va se concentrer sur la partie connexion/ inscription et ajout/vali
 ## Environnement de test
 Environnement de test:
 
-- CPU, Memoire : inconnu
-- OS : inconnu
-- Software pertinent : inconnu
+- CPU, Memoire : Intel Core i5-10210U CPU @ 1.60GHz   2.11 GHz, 8 Go RAM
+- OS : Windows
+- Software pertinent : VsCode
 
 Aucune donné sur l'environnement de production. Aucune comparaison possible avec l'environnement de test.
 
 ## Planification des tests
 
-1. Les limitations sont iconnus.
+1. Les limitations sont iconnues.
 2. Comprendre/Prévoir le modèle de charge en production et l'adapter au modèle des tests.//TODO
 3. Type de test nécessaire : stress testing
 4. Les métriques que l'on souhaite tester sont les temps de reponse dû à de grosse quantité de connexion pour déterminer à quel moment le site crash et vérifier l'utilisation du CPU. 
@@ -112,7 +112,7 @@ Ensuite, détaillez chaque scénario comme l'exemple suivant (pour le Load Test)
 
 |  | Test Details |
 |--------------|:-----------:|
-| **Purpose** | Peak hour transaction processing will be under examination to <br/> determine if the system can maintain response times <br/> under the highest anticipated load. <br/> This test is designed to collect performance <br/> metrics on transaction throughput, response times, <br/> and system resource utilization, <br/> in comparison to Performance requirements. |
+| **Purpose** | Peak user transaction processing will be under examination to <br/> determine if the system can maintain response times <br/> under the highest anticipated load. <br/> This test is designed to collect performance <br/> metrics on transaction throughput, response times, <br/> and system resource utilization, <br/> in comparison to Performance requirements. |
 | **No. of Tests** | 4 (2 tests per cycle) |
 | **Duration** | Ramp-up: X - Steady State: X - Ramp-down: X |
 | **Scripts** | 1. XXXX - 2. XXXX |

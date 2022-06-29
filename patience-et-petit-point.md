@@ -22,18 +22,21 @@ Groupe : Naty Ghanem, Rina-Myriam Harroch
     On peut aussi laisser un commentaire sur les articles du blog pour partager des astuces.
 
 - Type d'utilisateurs prévus :
+
     La cible est principalement les débutants dans la couture et les passionés.
     L'utilisateur peut faire des achats après s'être connecté ou seulement visiterle blog. 
 
 - Toute autre information que vous jugez pertinente:
-    Le but etant de vérifier le comportement du site lorsqu'il a un nombre de visiteur d'un jour normal. Etant donné que le site n'a pas un nombre de visiteur haut, un load testing est le test le plus adapté.
+
+    Le but étant de vérifier le comportement du site lorsqu'il a un nombre de visiteur d'un jour normal. Etant donné que le site n'a pas un nombre de visiteur haut, un load testing est le test le plus adapté.
 
 ## Architecture de l'application
 
 - Résumé de l'architecture globale
 
 - Technologies/Langages utilisés
-    - Le site a utilisé un thème Wordpress
+    Le site a utilisé un thème 
+    - Wordpress
     - Apache 
     - Hébergé par OVH
 
@@ -58,9 +61,9 @@ On va se concentrer sur la partie connexion/ inscription, ajout/validation du pa
 ## Environnement de test
 Environnement de test:
 
-- CPU, Memoire : inconnu
-- OS : inconnu
-- Software pertinent : inconnu
+- CPU, Memoire : Intel Core i5-10210U CPU @ 1.60GHz   2.11 GHz, 8 Go RAM
+- OS : Windows
+- Software pertinent : VsCode
 
 Aucune donné sur l'environnement de production. Aucune comparaison possible avec l'environnement de test.
 
@@ -94,7 +97,7 @@ Indiquez comment se fait la préparation de la donnée.//TODO
 
 ## 8. Execution des tests
 
-On va se baser sur un niveau de visite de 1000 utilisateurs.
+On va se baser sur un niveau de visite de 500 utilisateurs.
 
 | Test Run | Test Scenario Summary |
 |--------------|:-----------:|
@@ -106,11 +109,11 @@ On va se baser sur un niveau de visite de 1000 utilisateurs.
 | Cycle 1 - Run 5 | Load Test - 1 hour test with 100% of 500 users |
 | Cycle 1 - Run 6 | Load Test - login and add a product in cart |
 | Cycle 1 - Run 7 | Load Test - validate cart and do payment |
-| Cycle 2 - Run 8 | Load Test - logout and login |
-| Cycle 2 - Run 9 | Load Test - add a comment on the blog section |
-| Cycle 2 - Run 10 | Load Test - 1 Minute test with 70% of 500 users |
-| Cycle 2 - Run 11 | Load Test - 1 Minute test with 50% of 500 users |
-| Cycle 2 - Run 12 | Load Test - 1 Minute test with 20% of 500 users |
+| Cycle 2 - Run 1 | Load Test - logout and login |
+| Cycle 2 - Run 2 | Load Test - add a comment on the blog section |
+| Cycle 2 - Run 3 | Load Test - 1 Minute test with 70% of 500 users |
+| Cycle 2 - Run 4 | Load Test - 1 Minute test with 50% of 500 users |
+| Cycle 2 - Run 5 | Load Test - 1 Minute test with 20% of 500 users |
 
 //TODO
 Ensuite, détaillez chaque scénario comme l'exemple suivant (pour le Load Test) :
