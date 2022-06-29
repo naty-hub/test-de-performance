@@ -4,10 +4,13 @@ Naty Ghanem
 
 4IW3
 
-# Test de performance Fnac
-https://www.fnac.com/
+# Test de performance sur un site à moyen trafic  
 
 Groupe Rina-Myriam Harroch / Naty Ghanem
+
+Projet à tester : "Fnac"
+
+https://www.fnac.com/
 
 ## Préambule
 
@@ -25,7 +28,7 @@ Groupe Rina-Myriam Harroch / Naty Ghanem
     Utilisateurs avec une fibre culturels et connecté. Ciblage d'une clientèle majoritairement jeune adulte.
 
 - Toute autre information que vous jugez pertinente:
-    Le but etant de vérifier les capacité maximales du site. Entant donné que le site est habitué à des connexions moyennes et aussi à des piques de connexion dû au fuseau horaire.
+    Le but etant de vérifier les capacité maximales du site. Etant donné que le site est habitué à des connexions moyennes et aussi à des piques de connexion dû au fuseau horaire.
 
 
 
@@ -68,7 +71,7 @@ Aucune donné sur l'environnement de production. Aucune comparaison possible ave
 1. Les limitations sont iconnus.
 2. Comprendre/Prévoir le modèle de charge en production et l'adapter au modèle des tests.//TODO
 3. Type de test nécessaire : stress testing
-4. Les métriques que l'on souhaite tester sont les temps de reponse dû à de grosse quantité de connexion pour déterminer à quel moment le site crash et vérifier l'utilisation du CPU.
+4. Les métriques que l'on souhaite tester sont les temps de reponse dû à de grosse quantité de connexion pour déterminer à quel moment le site crash et vérifier l'utilisation du CPU. 
 5. Les métriques qui définiront la réussite ou l'échec du test.//TODO
 
 
@@ -92,7 +95,7 @@ Indiquez comment se fait la préparation de la donnée.//TODO
 
 ## 8. Execution des tests
 
-On va se basser sur une echelle de 10 000 utilisateurs puisque c'est la connection moyenne du site
+On va se baser sur une echelle de 10 000 utilisateurs puisque c'est la connection moyenne du site
 
 | Test Run | Test Scenario Summary |
 |--------------|:-----------:|
@@ -119,10 +122,9 @@ Ensuite, détaillez chaque scénario comme l'exemple suivant (pour le Load Test)
 | **Validation Criteria** | 1. The mean of the response time should be below 1.5 sec <br/> 2. The error rate should be below 5% |
 
 ## Résultats des tests
-
+NaN
 
 ## Analyses et Optimisations proposées
 
- 
-
+ NaN
 
